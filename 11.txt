@@ -1,1 +1,29 @@
-jhgfdsa
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    get int x = get_int("what hight?");
+        if(x>0 && x<9)
+        {
+          while (x>0 && x<9)
+              printf("what hight?")
+        }
+
+}
+for (int x = 0; x < n; n++)
+  {
+      for (int x = 0; x < n; x++)
+      {
+          printf("#");
+      }
+      printf("\n");
+  }
+
+
+
+
+
+
+
