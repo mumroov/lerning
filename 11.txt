@@ -1,25 +1,33 @@
+#include<stdio.h>
+#include<cs50.h>
 
-#include <cs50.h>
-#include <stdio.h>
+bool askUserAge()
+   {  
+    int i = get_int("Enter your age\n");
 
+     if(i>0 && i<18 ){
+         printf("Sorry,you cannot buy this\n");
+         return true;
+     }
+     if(i>18 && i<100)
+     ;
+     {
+        printf("You can bay this.\n");
+        return false;
+     }
+}
 int main(void)
 {
-    get int x = get_int("what hight?");
-        if(x>0 && x<9)
-        {
-          while (x>0 && x<9)
-              printf("what hight?")
-        }
+    string name = get_string("What is your name?\n");
+    printf("Hello, %s\n", name);
 
-}
-for (int x = 0; x < n; n++)
-  {
-      for (int x = 0; x < n; x++)
-      {
-          printf("#");
-      }
-      printf("\n");
-  }
+    bool repeat = true;
+    while(repeat){
+      repeat = askUserAge();
+      
+    }
+    printf("Have a nyce day!\n");
+};
 
 
 
